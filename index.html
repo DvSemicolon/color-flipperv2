@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="index.css" rel="stylesheet">
+    <link href="color heel.png" rel="shortcut icon" type="png">
+    <title>Color Flipper V2</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img alt="" class="colorImg" src="color heel.png">
+      <!-- First, create modal -->
+      <div class="modal__color">
+        <!-- Create a form for the color -->
+        <form class="color__form">
+          <button class="close" name="close" type="button">X</button>
+          <!-- Create every label and input for the types -->
+          <label for="rgb">RGB</label>
+          <input checked class="typeColor" name="rgb" type="checkbox"/>
+          <label for="hue">HSL</label>
+          <input checked class="typeColor" name="hsl" type="checkbox"/>
+          <label for="hex">HEX</label>
+          <input checked class="typeColor" name="hex" type="checkbox"/>
+          <label for="sim">SIM</label>
+          <input checked class="typeColor" name="sim" type="checkbox"/>
+          <!-- result -->
+          <h2 class="result">Pick your color</h2>
+          <button class="random" name="random" type="submit">Random</button>
+        </form>
+      </div>
+      <!-- pick your setup of color, could be, hue, rgb, hex or name -->
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
